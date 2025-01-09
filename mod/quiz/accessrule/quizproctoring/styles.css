@@ -1,0 +1,261 @@
+#page-mod-quiz-attempt .quizaccess_quizproctoring-video {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    width: 240px;
+}
+.userimage {
+    max-width: 100px;
+    max-height: 100px;
+}
+button.proctoringimage {
+    margin-left: 1.5%;
+    margin-bottom: 0.4%;
+}
+button.proctoridentity {
+    margin-left: 1.5%;
+    margin-bottom: 0.4%;
+}
+.imgheading {
+    font-size: 1.171875rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.quizaccess_quizproctoring {
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 240px;
+}
+.modalvideo {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    right: 0%;
+}
+
+.proctoringimage {
+    cursor: pointer;
+}
+
+.proctoringidentity {
+    cursor: pointer;
+}
+
+/* Modal Content */
+.modalvideo-content {
+    margin: auto;
+    width: 50%;
+}
+
+.submittag {
+    color: red;
+}
+
+#loading {
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    height: 9%;
+    width: 5%;
+    z-index: 9999999;
+}
+
+.headtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headtitle p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.imageicon {
+    width: 25px;
+    height: 25px;
+}
+
+.proctoringimage {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.proctoridentity {
+    cursor: pointer;
+}
+
+.proctoring-images-modal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.proctoring-image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proctoring-image-thumbnail {
+    width: 75px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.proctoring-image-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.image-title {
+    display: none;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.headtitle .delcourse {
+    background-color: #dc143c;
+    border-color: #dc143c;
+}
+
+.headtitle .delcourse:hover {
+    background-color: #880808;
+    border-color: #880808;
+}
+
+.deleteall {
+    margin-left: 2px;
+    display: inline;
+    font-size: 14px;
+}
+
+.attempt-date {
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.main-image img {
+    border: 2px solid blue;
+}
+
+.warning-image img {
+    border: 2px solid red;
+}
+
+.green-image img {
+    border: 2px solid green;
+}
+
+.imagelist li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.mainimage::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.warningimage::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.approveimage::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+#storeallimages {
+    vertical-align: middle;
+}
+
+.delete-icon {
+    color: #dc143c;
+    transition: color 0.3s;
+}
+
+.delete-icon:hover {
+    color: #880808;
+}
+
+.delete-quiz {
+    color: #dc143c;
+    transition: color 0.3s;
+}
+
+.delete-quiz:hover {
+    color: #880808;
+}
+
+.deletenotifbtn .btn-primary {
+    background-color: #dc143c;
+    border-color: #dc143c;
+}
+
+.deletenotifbtn .btn-primary:hover {
+    background-color: #880808;
+    border-color: #880808;
+}
+
+.deletenotifbtn .btn-primary:disabled {
+    color: #fff;
+    background-color: #dc143c;
+    border-color: #dc143c;
+}
+
+.image-list-container {
+    display: block;
+    width: 100%;
+    margin-left: 190px;
+    margin-bottom: 10px;
+}
+
+.imagelist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hide video on mobile devices */
+@media only screen and (max-width: 767px) {
+    #page-mod-quiz-attempt .quizaccess_quizproctoring-video {
+        display: none;
+    }
+}
+
+/* Show video on larger screens */
+@media only screen and (min-width: 768px) {
+    #page-mod-quiz-attempt .quizaccess_quizproctoring-video {
+        display: block; /* Or use display: inline; or display: inline-block; as per your layout */
+    }
+}

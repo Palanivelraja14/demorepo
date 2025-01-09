@@ -1,0 +1,9 @@
+<div class="report-list">
+    {{#reports}}
+    <div class="report-item">
+        <h3>{{name}}</h3>
+        <p>{{description}}</p>
+        <a href="{{url}}" class="btn btn-primary">{{get_string('viewreport', 'report_customreportbuilder')}}</a>
+    </div>
+    {{/reports}}
+</div>
